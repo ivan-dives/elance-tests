@@ -1,0 +1,58 @@
+2:
+not bit-addressable: PC
+8051: harvard architecture
+not correct: # 0e8h (?)
+ljmp: 3 bytes
+cas/ras: dram
+moore law: about speed
+timer limit: ffffh
+psw.3 (rs0) = 1, psw.4 (rs1) == bank 1
+indirect addressing: @
+2s complement for -34H: CC
+mov a, 30h: direct addressing
+correct the bcd addition problem: DA
+which register bank conflicts with stack in 8051: bank 1
+if th1 = -2 (FEH), SMOD = 1, XTAL=11.0592, baud rate = 28800 MHz
+which frequency is used by the timer to set the baud rate: 28800
+which bit of the ip register belongs to the serial interrupt prio? ip.4
+watchdog timer: avr
+assembler produces: hex
+-2 -5: OV = 0
+
+3:
+control word: A4H
+pic16c: 33 instruction
+8051: sp on powerup == 07H
+semiconductor memory speed: nanoseconds
+arm: 32 risc
+8051 serial interrupt priority: 4th bit
+http://www.mikroe.com/chapters/view/65/#ch2.3
+after reset in 8051 the ports p0-p3 are initialized to ffh
+Flash memory stores information in an array of memory cells made from floating-gate transistors.
+swap rr rr: 53h
+swap anl: 50h
+tf0 flag raised, timer 1C12: 58350 cycles
+how much delay: mov r3, #200 ; djnz r3 ; ret1 : 436.17 usecs
+AT89C51: C stands for CMOS (?)
+baud rate: th1 = 10, xtal = 16MHz, smod = 0: 4166 (?)
+for serial mode 2: sm0 = 1, sm1 = 0
+DS5000 microcontroller is a home development system because it has: NV-RAM
+76H + 8CH = 102H: CY=1 and AC=1
+arm3 4kb cache
+tmod = 20H: timer 1, mode 1
+orl 99, cpl: 66
+SMOD == PCON.7
+xtal=11.0952, baud = 9600, th1 = fdh
+tf1 raised in mode 1 at FFFFH
+jtag == ieee 1149.1
+microcontrollers are designed by using CMOS
+bit addressable: 8051
+cjne r4, #53 not jump: 53
+rlc ro: not correct
+timer mode 2: 8-bit timer
+in embedded systems can be used: microprocessors and microcontrollers
+8255 PPI, all ports are input ports: CW = 9B
+stepper motor can't be used: D
+8031 vs 8051: 8031 doesn't have ROM
+67 in BCD -> ASCII: 36/37
+data_2 db "england": 7b
