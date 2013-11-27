@@ -2,5 +2,11 @@
 
 import math
 
-print ','.join([str(int(math.sqrt((2*50*int(d))/30))) for d in raw_input().split(',')])
+def get_quantity(x):
+	return math.sqrt(2 * 50 * x / 30)
+
+def get_quantity_cast(s):
+	return str(int(get_quantity(int(s))))
+
+print ','.join([get_quantity_cast(d) for d in raw_input().split(',')])
 

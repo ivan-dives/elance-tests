@@ -2,14 +2,12 @@
 
 import math
 
-def _greatest_divisible(x):
+def greatest_divisible(x):
 	n = math.pow(10, x) - 1
-	while n % x != 0:
-		n -= 1
-	return n
+	return n - n % x
 
-def greatest_divisible(s):
-	return str(int(_greatest_divisible(int(s))))
+def greatest_divisible_cast(s):
+	return str(int(greatest_divisible(int(s))))
 
-print ','.join([greatest_divisible(x) for x in raw_input().split(',')])
+print ','.join([greatest_divisible_cast(x) for x in raw_input().split(',')])
 
