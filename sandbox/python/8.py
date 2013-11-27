@@ -15,11 +15,3 @@ def foo(n):
 for line in sys.stdin:
 	print sum(foo(int(line)))
 
-'''
-while True:
-	try:
-		print sum(foo(int(raw_input())))
-	except EOFError:
-		break
-'''
-
