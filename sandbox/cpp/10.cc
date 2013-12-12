@@ -3,7 +3,6 @@
 
 int main()
 {
-
 	int i, p;
 
 	for (i = 2;;i++) {

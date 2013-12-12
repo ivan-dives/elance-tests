@@ -1,49 +1,33 @@
 #include <cmath>
 #include <iostream>
 
-/*
-int main()
+bool prime(const int x)
 {
-	int i, integer;
-
-	std::cin >> integer;
-
-	if (integer < 1 || integer > 500) {
-		std::cout << "OUT OF RANGE" << std::endl;
-		return 0;
-	}
-
-	for (i = 2; i <= sqrt(integer); i++)
-		if (integer % i == 0) {
-			std::cout << "FALSE" << std::endl;
-			return 0;
-		}
-	std::cout << "TRUE" << std::endl;
-
-	return 0;
+	int i;
+	for (i = 2; i <= sqrt(x); i++)
+		if (x % i == 0)
+			return false;
+	return true;
 }
-*/
+
 
 int main()
 {
-	bool prime;
-	int i, integer;
+	int integer;
 
 	while (std::cin >> integer) {
+		if (integer == 0)
+			return 0;
 		if (integer < 1 || integer > 500) {
 			std::cout << "OUT OF RANGE" << std::endl;
 			continue;
 		}
-		prime = true;
-		for (i = 2; i <= sqrt(integer); i++)
-			if (integer % i == 0) {
-				std::cout << "FALSE" << std::endl;
-				prime = false;
-				break;
-			}
-		if (prime)
+		if (!prime(integer))
+			std::cout << "FALSE" << std::endl;
+		else
 			std::cout << "TRUE" << std::endl;
 	}
 
 	return 0;
 }
+

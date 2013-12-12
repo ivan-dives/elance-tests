@@ -7,12 +7,10 @@ int main()
 	std::string str;
 
 	std::cin >> number_of_strings;
-	std::cin.ignore();
+	std::cin.ignore(1, '\n');
 	for (i = 0; i < number_of_strings; i++) {
 		std::getline(std::cin, str);
-		long a = str.find('a');
-		long is = str.find("is");
-		std::cout << a + is << std::endl;
+		std::cout << (long)str.find('a') + (long)str.find("is") << std::endl;
 	}
 
 	return 0;
